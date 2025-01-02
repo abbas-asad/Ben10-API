@@ -31,7 +31,7 @@ export const GET = async (
   const { id } = await context.params;
 
   // Fetch all aliens from the static API
-  const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/aliens`);
+  const res = await fetch(`https://ben10sapi.vercel.app/aliens`);
   const aliens = await res.json();
 
   // Find the alien by ID
